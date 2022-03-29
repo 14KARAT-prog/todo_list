@@ -19,9 +19,13 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from users.views import UserModelViewSet
+from TODO.views import ProjectModelViewSet, TODOModelViewSet
+
 
 router = DefaultRouter()
 router.register('users', UserModelViewSet)
+router.register('projects', ProjectModelViewSet)
+router.register('todos', TODOModelViewSet)
 
 
 urlpatterns = [
