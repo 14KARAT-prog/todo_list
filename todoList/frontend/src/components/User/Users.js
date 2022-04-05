@@ -1,10 +1,9 @@
 import React from "react";
 import User from "./User";
-import "./Users.css";
 
 function Users({users}) {
     return (
-        <table id="usersTable">
+        <table className="customTable">
             <caption>Таблица пользователей</caption>
             <thead>
                 <tr>

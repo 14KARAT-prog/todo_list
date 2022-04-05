@@ -1,10 +1,19 @@
 .App {
   /* text-align: center; */
   margin: 0 auto;
-  max-width: 1600px;
 }
 
 .container {
   margin: 0 auto;
   text-align: center;
+}
+
+.customTable {
+  border: 2px solid #000000;
+  background-color: #cccccc;
+  margin: 0 auto;
+}
+
+.active {
+  color: gray;
 }
