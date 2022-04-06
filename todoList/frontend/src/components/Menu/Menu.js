@@ -15,9 +15,10 @@ function Menu() {
         <header>
             <div className="container">
                 <nav onClick={(event) => handleClick(event)}>
-                    <Link to="/users">Users</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/todos">TODOs</Link>
+                    <Link className="active" to='/'>Home</Link>
+                    <Link to="users">Users</Link>
+                    <Link to="projects">Projects</Link>
+                    <Link to="todos">TODOs</Link>
                 </nav>
             </div>
         </header>

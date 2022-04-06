@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Project({projects}) {
-
  return (
    <tr>
          <td>
-            {projects.name}
+            <Link to={`/projects/${projects.id}`}>{projects.name}</Link>
          </td>
          <td>
             {projects.url}
