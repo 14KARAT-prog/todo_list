@@ -8,10 +8,10 @@ function User({users}) {
             {users.username}
          </td>
          <td>
-            {users.first_name}
+            {users.firstName}
          </td>
          <td>
-            {users.last_name}
+            {users.lastName}
          </td>
          <td>
             {users.email}
