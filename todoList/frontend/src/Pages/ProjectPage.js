@@ -12,7 +12,12 @@ function ProjectPage({ project, users }) {
                         <h2>Проект {item.id}</h2>
                         <div>Project: { item.name }</div>
                         <div>Url project: <a href={item.url} target="_blank" rel="noopener noreferrer">{ item.url }</a></div>
-                        <div>Project users: { item.users }</div>
+                        <div>{item.users.map((userId) => {
+                            let user = users.find((user) => user.id === userId)
+                            if (user) {
+                                return user.lastName + ' ';
+                            }
+                        })}</div>
                     </React.Fragment>
                 )
             })}
