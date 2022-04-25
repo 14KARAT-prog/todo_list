@@ -3,7 +3,6 @@ import './Menu.css';
 import { Link } from 'react-router-dom';
 
 function Menu() {
-
     function handleClick(event) {
         event.target.parentElement.childNodes.forEach(element => {
             element.classList.remove('active');
@@ -19,6 +18,8 @@ function Menu() {
                     <Link to="users">Users</Link>
                     <Link to="projects">Projects</Link>
                     <Link to="todos">TODOs</Link>
+                    <Link to="auth">Sign in</Link>
+                    
                 </nav>
             </div>
         </header>

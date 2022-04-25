@@ -16,6 +16,8 @@ function ProjectPage({ project, users }) {
                             let user = users.find((user) => user.id === userId)
                             if (user) {
                                 return user.lastName + ' ';
+                            } else {
+                                return '';
                             }
                         })}</div>
                     </React.Fragment>
