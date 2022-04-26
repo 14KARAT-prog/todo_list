@@ -32,3 +32,9 @@ main {
 footer {
   flex: 0 0 auto;
 }
+
+.isAuthenticated {
+  font-size: 32px;
+  margin: 20px 0;
+  text-align: center;
+}
