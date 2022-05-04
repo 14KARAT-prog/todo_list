@@ -42,14 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    "graphene_django",
     'corsheaders',
     'django_filters',
     'users',
     'TODO',
-    'drf_yasg2',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
@@ -156,4 +156,8 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 100,
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.AcceptHeaderVersioning',
+}
+
+GRAPHENE = {
+    "SCHEMA": "todoList.schema.schema"
 }
